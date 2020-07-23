@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Text Utils</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Welcome to Text Utils</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="http://127.0.0.1:8000/">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="/about_us">About Us</a>
+              <a class="nav-item nav-link" href="/contact_us">Contact Us</a>
+              <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
+          </div>
+          <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+     </nav>
+
+      <!-- alerts-->
+      <div class="alert alert-primary alert-dismissible fade show" role="alert">
+          <strong>Welcome to Text Utils. Edit your text here!</strong> You should check in on some of those fields below.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+
+      <div class="container">
+          <form action="/analyseb" method="get">
+          <label for="text">Enter Your Text Here!!</label>
+          <textarea name="text" class="form-control" id="text" rows="10"></textarea><br>
+          <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="removepunc" name="removepunc">
+              <label class="custom-control-label" for="removepunc">Remove Punctuations</label>
+          </div>
+          <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="caps" name="caps">
+              <label class="custom-control-label" for="caps">UPPERCASE</label>
+          </div>
+          <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="nlr" name="nlr">
+              <label class="custom-control-label" for="nlr">New Line Remover</label>
+          </div>
+          <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="spacere" name="spacere">
+              <label class="custom-control-label" for="spacere">Remove Space</label>
+           </div>
+          <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="exspacere" name="exspacere">
+              <label class="custom-control-label" for="exspacere">Remove Extra Space</label>
+          </div>
+          <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="charcount" name="charcount">
+              <label class="custom-control-label" for="charcount">Count the Charcters</label>
+          </div>
+              <!--input type="checkbox" name="caps">UPPERCASE<br>
+                <input type="checkbox" name="nlr">New Line Remover<br>
+                <input type="checkbox" name="spacere">Remove Space<br>
+                <input type="checkbox" name="exspacere">Remove Extra Space<br>
+                <input type="checkbox" name="charcount">Count the Charcters<br-->
+
+          <button type="submit" class="btn btn-success mt= 5 ml -20">SUBMIT</button>
+          </form>
+          </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
